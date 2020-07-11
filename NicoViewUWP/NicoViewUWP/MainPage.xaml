@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="NicoViewUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NicoViewUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    
+    xmlns:views="using:NicoViewUWP.Views"
+    >
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+        </Grid.Resources>
+        <views:TextTestPanel x:Name="panel">
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+            <TextBlock Text="Hello"/>
+        </views:TextTestPanel>
+        <TextBlock x:Name="text"/>
+    </Grid>
+</Page>
