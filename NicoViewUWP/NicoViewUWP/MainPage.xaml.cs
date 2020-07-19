@@ -24,20 +24,13 @@ namespace NicoViewUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        //private DispatcherTimer _timer;
-
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //this._timer = new DispatcherTimer();
-            //this._timer.Interval = TimeSpan.FromSeconds(1 / 60.0);
-            //_timer.Tick += _timer_Tick;
-            //_timer.Start();
-
             new Action(async () =>
             {
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.High, async () =>
