@@ -12,7 +12,7 @@
     <DefaultLanguage>ja-JP</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -151,8 +151,30 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.10</Version>
+      <Version>6.2.12</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BookViewerApp3\BrowserControl\BrowserControl.csproj">
+      <Project>{0e2c8720-2e94-4490-895d-8874c218e6d8}</Project>
+      <Name>BrowserControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\BookViewerApp3\FileExplorerControl\FileExplorerControl.csproj">
+      <Project>{7d40eb0d-37d2-458a-bfce-bd4fef8244f7}</Project>
+      <Name>FileExplorerControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Hohoema\NiconicoLiveToolkit.UWP\NiconicoLiveToolkit.UWP.csproj">
+      <Project>{311b8388-57d0-4724-ad17-be76a2abf0a9}</Project>
+      <Name>NiconicoLiveToolkit.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\OpenNiconico2\Mntone.Nico2.UWP\Mntone.Nico2.UWP.csproj">
+      <Project>{bbf8857d-550a-4228-b9fc-52c38d5346f1}</Project>
+      <Name>Mntone.Nico2.UWP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\OpenNiconico2\Mntone.Nico2.UWP_Latest\Mntone.Nico2.UWP_Latest.csproj">
+      <Project>{cc63ef1d-ecd6-478d-8852-5c45fbbf697a}</Project>
+      <Name>Mntone.Nico2.UWP_Latest</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
